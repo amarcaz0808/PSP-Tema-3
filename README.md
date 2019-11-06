@@ -1,4 +1,7 @@
 # PSP-Tema-3
+## Ejemplos numerados
+Estos ejemplos se corresponden con los apàrtados respectivos de los apuntes.
+
 En la carpeta "Sockets_UDP" hay un proyecto de NetBeans para ejecutar la aplicación pasándole parámetros por la línea de argumentos. 
 (este proyecto tiene establecido un mensaje a mandar por la línea de argumentos por defecto:)
 http://javadhc.blogspot.com.es/2012/12/pasar-argumentos-al-programa-en-netbeans.html
