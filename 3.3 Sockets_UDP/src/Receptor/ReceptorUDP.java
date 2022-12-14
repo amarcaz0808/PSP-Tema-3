@@ -12,14 +12,22 @@ package Receptor;
 import java.net.*;
 import java.io.*;
 
-public class ReceptorUDP {
-
-    public static void main(String args[]) {
+public class ReceptorUDP
+{
+    /**
+     * MAIN
+     * @param args
+     */
+    public static void main(String args[])
+    {
         // Sin argumentos 
-        if (args.length != 0) {
+        if (args.length!=0)
+        {
             System.err.println("Uso: java ReceptorUDP");
-        } else {
-            try {
+        }else
+        {
+            try
+            {
                 // Crea el  socket 
                 DatagramSocket sSocket = new DatagramSocket(1500);
 
@@ -39,13 +47,13 @@ public class ReceptorUDP {
                     String datos = new String(mensaje.getData(), 0, mensaje.getLength());
                     System.out.println("\tMensaje Recibido: " + datos);
                 }
-
-            } catch (SocketException e) {
+            }catch(SocketException e)
+            {
                 System.err.println("Error en el Socket: " + e.getMessage());
-
-            } catch (IOException e) {
+            }catch(IOException e)
+            {
                 System.err.println("Error E/S: " + e.getMessage());
-            }
-        }
-    }
-}
+            }//End of TRY/CATCH
+        }//End of IF/ELSE
+    }//End of MAIN
+}//End of class ReceptorUDP
