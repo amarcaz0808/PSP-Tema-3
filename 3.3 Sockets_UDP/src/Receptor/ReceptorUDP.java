@@ -29,17 +29,18 @@ public class ReceptorUDP
             try
             {
                 // Crea el  socket 
-                DatagramSocket sSocket = new DatagramSocket(1500);
+                DatagramSocket sSocket=new DatagramSocket(1500);
 
                 // Crea el espacio para los mensajes 
-                byte[] cadena = new byte[1000];
+                byte[] cadena=new byte[1000];
                 // crear un mensaje para recibir paquetes UDP de hasta 1000 bytes
                 DatagramPacket mensaje = new DatagramPacket(cadena, cadena.length);
 
                 System.out.println("Esperando mensajes...");
                 // bucle infinito para recibir mensajes permanentemente
                 // mejor evitar esto
-                while (true) {
+                while(true)
+                {
                     // Recibe y muestra el mensaje 
                     sSocket.receive(mensaje);
                     
